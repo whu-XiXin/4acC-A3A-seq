@@ -16,7 +16,7 @@ Github: https://github.com/whu-XiXin/4acC-A3A-seq/
 
 **Running spikein.sh**
 
-Before running spikein.sh, please install fastp, bowtie2, varscan, samtools and other necessary software on your own. This script will output spike mutation vcf files both forward and reverse strands.
+Before running spikein.sh, please install fastp, bowtie2, varscan, samtools and other necessary software on your own, and use fastp and cutadapt to remove universal adapters introduced during library preparation and specific adapters added by the kit. This script will output spike mutation vcf files both forward and reverse strands.
 
 ```
 bash spikein.sh
@@ -25,7 +25,7 @@ bash spikein.sh
 
 **Runing bismark.sh**
 
-Before running bismark.sh, please install fastp, cutadapt, bismark, bowtie2, samtools and other necessary software on your own. This script will output txt files including C to T rate in different group.
+Before running bismark.sh, please install fastp, cutadapt, bismark, bowtie2, samtools and other necessary software on your own, and use fastp and cutadapt to remove universal adapters introduced during library preparation and specific adapters added by the kit. This script will output txt files including C to T rate in different group.
 
 ```
 bash bismark.sh
