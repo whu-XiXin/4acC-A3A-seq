@@ -25,32 +25,16 @@ bash spikein.sh
 
 **Runing bismark.sh**
 
-Before running bismark.sh, please install fastp, bismark, bowtie2, samtools and other necessary software on your own. This script will output txt files including C to T rate in different group.
+Before running bismark.sh, please install fastp, cutadapt, bismark, bowtie2, samtools and other necessary software on your own. This script will output txt files including C to T rate in different group.
 
 ```
 bash bismark.sh
 ```
 
-**Runing combine_data.py**
+**Runing 4acC_identify.R**
 
-This script will combine C to T rate in different group and output txt frame.
-
-```
-python combine_data.py
-```
-
-**Runing identify_4acC_rep12.sh**
-
-This script will identify the 4acC site in C to T rate file.
+This script will calculate the 4acC site
 
 ```
-bash identify_4acC_rep12.sh
-```
-
-**Runing fisher_test.R**
-
-This script will calculate the fisher test p value of 4acC site
-
-```
-Rscript fisher_test.R
+Rscript 4acC_identify.R
 ```
